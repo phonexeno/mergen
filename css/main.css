@@ -101,7 +101,7 @@ button {
 
 a {
   display: inline-block;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -449,6 +449,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
+  background-image: url('./images/test.png');
   position: relative;
   overflow: hidden;
   padding-top: 100px;
@@ -537,6 +538,15 @@ strong {
   display: block;
   width: 100%;
 }
+
+.mergen-image-small {
+  border-radius: var(--border-radius-medium);
+  display: block;
+  width: 70%;
+  max-height:max-content;
+  margin: auto;
+}
+   
 
 .artists-thumb:hover .artists-hover {
   transform: translateY(0);
@@ -958,3 +968,14 @@ strong {
   }
 }
 
+.mergen-paragraph {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+  text-align: left;
+}
